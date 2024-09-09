@@ -1,0 +1,180 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.2em;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 200px 1fr;
+	grid-template-areas: "sidebar header" "sidebar content";
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.sidebar {
+	height: 100vh;
+	background: rgb(9, 59, 85);
+	grid-area: sidebar;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 60px;
+}
+
+.logo-container {
+	font-size: 1.5em;
+}
+
+.nav-section-one,
+.nav-section-two {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.header {
+	background-color: rgb(216, 216, 216);
+	grid-area: header;
+	display: flex;
+	flex-direction: column;
+	padding: 25px 60px 25px 50px;
+}
+
+.header-top {
+	display: flex;
+	height: 50%;
+	justify-content: space-between;
+}
+
+.search-container {
+	display: flex;
+}
+
+input {
+	width: min(30vw, 500px);
+	max-height: 30px;
+	min-height: 30px;
+	border-radius: 16px;
+}
+
+.profile-corner {
+	height: 30px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.profile-name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#profile-corner-pfp {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.header-bottom {
+	display: flex;
+	height: 50%;
+	justify-content: space-between;
+}
+
+.greeting {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "greeting-pfp greeting-text" "greeting-pfp greeting-name";
+}
+
+.greeting > img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	grid-area: greeting-pfp;
+}
+
+.greeting > p {
+	grid-area: greeting-text;
+	align-self: center;
+	padding-left: 15px;
+}
+
+.greeting > h2 {
+	grid-area: greeting-name;
+	padding-left: 15px;
+}
+
+.header-nav {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.header-nav > button {
+	width: 85px;
+	height: 35px;
+	border-radius: 20px;
+}
+
+.content {
+	background-color: rgb(64, 90, 110);
+	grid-area: content;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "cards announcements" "cards trending";
+}
+
+.cards {
+	border: 2px solid salmon;
+	grid-area: cards;
+	padding: 20px 20px;
+	padding-bottom: 50px;
+}
+
+.cards > h3 {
+	padding-bottom: 10px;
+}
+
+.cards-container {
+	height: 95%;
+	gap: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+	background-color: antiquewhite;
+}
+
+.announcements {
+	border: 2px solid salmon;
+	grid-area: announcements;
+}
+
+.trending {
+	border: 2px solid salmon;
+	grid-area: trending;
+}

@@ -1,0 +1,8 @@
+.icon {
+	display: inline-block;
+}
+
+.icon-search {
+	background: url(./src/magnify.svg);
+	margin-right: 5px;
+}
