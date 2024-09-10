@@ -6,3 +6,21 @@
 	background: url(./src/magnify.svg);
 	margin-right: 5px;
 }
+
+.icon-star {
+	background: url(./src/star.svg);
+}
+
+.icon-comments {
+	background: url(./src/forum.svg);
+}
+
+.icon-options {
+	background: url(./src/dots-horizontal.svg);
+}
+
+.icon-logo {
+	background: url(./src/aperture-logo.svg);
+	height: 50px;
+	width: 50px;
+}
