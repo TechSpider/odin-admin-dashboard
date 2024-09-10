@@ -22,6 +22,7 @@ a {
 }
 
 .container {
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 300px 1fr;
 	grid-template-rows: 200px 1fr;
@@ -34,7 +35,7 @@ a {
 }
 
 .sidebar {
-	height: 100vh;
+	height: 100%;
 	background: rgb(9, 59, 85);
 	grid-area: sidebar;
 	display: flex;
